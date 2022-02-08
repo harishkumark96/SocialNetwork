@@ -1,0 +1,48 @@
+/* .bodyDiv{
+    height: 100vh;
+} */
+#panel{
+    background-color:antiquewhite;
+    padding: 0px;
+}
+#signupbtn{
+    float:right;
+    /* margin-bottom: 10px; */
+    margin-right: 10px;
+    background-color: #7a64f6;
+}
+#title{
+background-color: #64b5f6;
+color: white;
+padding: 0px;
+margin-top: 0px;
+font-weight: 700;
+text-align: center;
+}
+form{
+    padding: 0px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 0px 20px 0px 20px;
+}
+.error{
+    color: red;
+}
+.input-field{
+    margin-bottom:0px !important;
+    padding-bottom:0px !important; 
+}
+#errorMsg {
+    background:#f6b2b5;
+    width: 100%;
+    height:50px;
+    text-align:center;
+}
+#errorMsg span{
+    top: 5 0%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    position: relative;
+    float: left;
+    font-size: 15px;
+}

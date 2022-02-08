@@ -1,0 +1,41 @@
+<app-toolbar></app-toolbar>
+
+<div class="container" style="margin-top:30px">
+<div class="row">
+    <div class="col s12 m4 l3">
+        <app-side></app-side>
+
+    </div>
+    <div class="col s12 m8 l9">
+      <div class="row">
+        <div class="col s6 l6">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>File</span>
+              <input type="file" ng2FileSelect [uploader]="uploader" (onFileSelected)="OnFileSelected($event)">
+            </div>
+            <div class="file-path-wrapper">
+              <input type="text"  id="filePath" class="file-path validate">
+            </div>
+          </div>
+
+        </div>
+        <div class="col s6 l6 ">
+          <div class="file-filed input-field">
+            <a class="waves-effect waves-light btn" (click)="upload()">
+              <span class="material-icons">image</span>Upload Image
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col s12 m6 l4" *ngFor="let image of images">
+          <div class="item-img-wrap imgDiv">
+            <img src="https://res.cloudinary.com/dfxjpj3c0/image/upload/v{{image.imgVersion}}/{{image.imgId}}" alt="" class="imgCircle">
+            <button class="btn imgBtn" (click)="setAsProfile(image)">set as Profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
